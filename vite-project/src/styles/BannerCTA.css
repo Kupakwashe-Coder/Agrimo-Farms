@@ -1,0 +1,147 @@
+.agr-banner-section {
+  padding: 50px 0;
+  background-color: #f6f7f2; /* Matches the site background for context */
+}
+
+.agr-banner-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Background Image and Overlay */
+.agr-banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.agr-banner-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Gray/Greenish semi-transparent overlay */
+  /* background-colorgba(97, 100, 97, 0.75)75);  */
+}
+
+/* Content Positioning */
+.agr-banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.agr-banner-text-group {
+  display: flex;
+  align-items: center;
+  max-width: 75%;
+}
+
+/* Icon Circle */
+.agr-banner-icon-circle {
+  width: 90px;
+  height: 90px;
+  min-width: 90px; /* Ensures it doesn't shrink */
+  background-color: #ffe870; /* Yellow circle */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.agr-banner-icon {
+  font-size: 35px;
+  color: #799a63; /* Light green icon color */
+}
+
+.agr-banner-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Button Styling */
+.agr-banner-btn {
+  background-color: white;
+  color: #343a40;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agr-banner-btn:hover {
+  background-color: #799a63;
+  color: white;
+}
+
+.agr-btn-arrow {
+  margin-left: 10px;
+  font-size: 12px;
+  transform: rotate(-45deg)
+  
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+  .agr-banner-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .agr-banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .agr-banner-text-group {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .agr-banner-icon-circle {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .agr-banner-box {
+    padding: 20px;
+  }
+  .agr-banner-title {
+    font-size: 20px;
+  }
+  .agr-banner-icon-circle {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+  }
+}

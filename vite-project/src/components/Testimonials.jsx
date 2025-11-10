@@ -27,7 +27,7 @@ const testimonialData = [
   {
     id: 3,
     rating: 5,
-    quote: '"I would recommend practitioners at this center to everyone! They are great to work with and are excellent trainers. They are great to work with and are excellent trainers. Thank you all!"',
+    quote: '"I would recommend practitioners at this center to everyone! They are great to work with and are excellent trainers. Thank you all!"',
     name: 'Daniel Craig',
     title: 'CO-FOUNDER',
     img: clientImg3,

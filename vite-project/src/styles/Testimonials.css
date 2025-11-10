@@ -30,8 +30,8 @@
 
 .testimonial-title {
   font-size: 40px;
-  font-weight: 700;
-  color: #343a40;
+  font-weight: 500;
+  color: #404A3D;
 }
 
 .navigation-buttons {
@@ -69,12 +69,16 @@
 
 .quote-icon-container {
   position: absolute;
-  top: -15px;
-  right: 15px;
+  padding: 5px 10px  !important;
+  border-radius: 50px;
+  background-color: #f6f7f2;
+  /* border: 1px ; */
+  top: -25px;
+  right: -10px;
   font-size: 60px;
   font-weight: 900;
   line-height: 1;
-  color: #f7e09f; /* Light yellow/gold color */
+  color: black; /* Light yellow/gold color */
   z-index: 10;
 }
 

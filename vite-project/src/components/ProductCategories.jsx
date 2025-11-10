@@ -85,4 +85,4 @@ const ProductCategories = () => {
   );
 };
 
-export default ProductCategories;
+export default ProductCategories; 

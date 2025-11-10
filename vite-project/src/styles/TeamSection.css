@@ -1,0 +1,116 @@
+.farm-team-section {
+  background-color: white; /* Light background matching the sample image */
+  padding: 60px 0;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.farm-team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+
+.farm-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* --- Team Card Styling --- */
+.farm-team-card {
+    width: 220px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: start;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); */
+}
+
+.farm-team-image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 120%; /* Ratio for vertical card image */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px; 
+}
+
+.farm-team-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.farm-team-share-icon {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: #EDDD5E; /* Yellow color */
+  color: #343a40; /* Dark icon color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.farm-team-share-icon:hover {
+  background-color: #f7d046;
+}
+
+.farm-team-details {
+  padding: 15px 10px;
+  background-color: transparent;
+}
+
+.farm-team-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #a0a0a0; /* Light gray title */
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.farm-team-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #343a40; /* Dark name color */
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.farm-team-name:hover {
+  color: #799a63; /* Green hover color */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+  .farm-team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .farm-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .farm-team-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

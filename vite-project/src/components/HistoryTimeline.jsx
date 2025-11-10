@@ -31,11 +31,11 @@ const HistoryTimeline = () => {
         
         {/* Header Row */}
         <div className="row mb-5">
-          <div className="col-lg-5 col-md-12">
+          <div className="col-lg-6 col-md-12">
             <p className="timeline-subtitle">Our History</p>
             <h2 className="timeline-header-title">Farming have been since 1866</h2>
           </div>
-          <div className="col-lg-7 col-md-12 d-flex align-items-end">
+          <div className="col-lg-6 col-md-12 d-flex align-items-end">
             <p className="timeline-header-text">
               There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even.
             </p>

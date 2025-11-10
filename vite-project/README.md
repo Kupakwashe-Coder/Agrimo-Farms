@@ -1,16 +1,14 @@
-# React + Vite
+🚜 Agrimo: Full-Stack Agricultural Platform
+This project powers the Agrimo website, a platform dedicated to showcasing their innovative agricultural projects, sustainable practices, and the comprehensive services they provide to the farming community.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built as a modern full-stack application, the front-end leverages the power and speed of React with the lightning-fast tooling of Vite.
 
-Currently, two official plugins are available:
+✨ Technology Stack
+Front-End (Agrimo Web)
+The user-facing application is a Single Page Application (SPA) built using the following core technologies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React: For building a dynamic and responsive user interface.
 
-## React Compiler
+Vite: Used for blazing-fast development, hot module replacement (HMR), and optimized production builds.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+JavaScript/TypeScript: The primary programming languages

@@ -1,0 +1,170 @@
+:root {
+  --farm-bg-light: #fcfbf8; /* Very light background for the section */
+  --farm-primary-green: #799a63; /* Green for CTA button */
+  --farm-text-dark: #343a40;
+  --farm-text-medium: #a0a0a0;
+  --farm-border-color: #e0e0e0;
+  --farm-max-width: 1200px;
+}
+
+.farm-contact-section {
+  background-color: #f6f7f2;
+  padding: 80px 0;
+}
+
+.farm-contact-container {
+  max-width: var(--farm-max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  background-color: #f6f7f2;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Left Image Column --- */
+.farm-contact-image-column {
+    
+  flex: 1;
+  max-width: 50%; /* Image takes half the space on desktop */
+  position: relative;
+}
+
+.farm-contact-image {
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+  width: 100%;
+  height: 100%;
+  /* Correct CSS */
+  
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Right Form Column --- */
+.farm-contact-form-column {
+  flex: 1;
+  padding: 40px;
+  position: relative;
+  max-width: 50%;
+}
+
+.farm-contact-tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--farm-primary-green);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.farm-contact-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--farm-text-dark);
+  line-height: 1.2;
+  margin: 0 0 30px 0;
+}
+
+.farm-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.farm-contact-input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.farm-contact-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: 1px solid var(--farm-border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--farm-text-dark);
+  transition: border-color 0.3s;
+  background-color: white; /* Ensure it's white over the graphic */
+}
+
+.farm-contact-input::placeholder {
+  color: var(--farm-text-medium);
+}
+
+.farm-contact-input:focus {
+  border-color: var(--farm-primary-green);
+  outline: none;
+}
+
+.farm-contact-textarea {
+  resize: vertical;
+}
+
+.farm-contact-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--farm-primary-green);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.farm-contact-submit-btn:hover {
+  background-color: #638250;
+}
+
+/* --- Subtle Background Graphic --- */
+/* This is a visual approximation of the faint house graphic */
+.farm-contact-graphic-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: 1;
+  /* Use a transparent background or image path for the actual graphic */
+  /* background: url('../images/house-sketch-graphic.png') no-repeat bottom right; */
+  background-size: 60%;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+  .farm-contact-container {
+    flex-direction: column;
+  }
+  .farm-contact-image-column,
+  .farm-contact-form-column {
+    max-width: 100%;
+  }
+  .farm-contact-image-column {
+    height: 350px; /* Give the image a fixed height on smaller screens */
+  }
+  .farm-contact-form-column {
+    padding: 30px;
+  }
+  .farm-contact-input-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .farm-contact-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .farm-contact-submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

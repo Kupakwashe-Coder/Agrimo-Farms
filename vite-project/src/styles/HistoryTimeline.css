@@ -17,8 +17,8 @@
 }
 
 .timeline-header-title {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 600;
   color: #343a40;
 }
 
@@ -33,7 +33,7 @@
   display: flex;
   position: relative;
   /* Central horizontal line */
-  border-bottom: 2px solid #e0e0e0;
+  /* border-bottom: 2px solid #e0e0e0; */
   padding-bottom: 40px; 
   margin-top: 50px;
 }
@@ -54,14 +54,16 @@
   border-radius: 50%;
   position: absolute;
   /* Adjusting bottom property to center the 14px dot over the 2px border-bottom */
-  bottom: -8px; 
-  left: 50%;
+  top: 104px; 
+  left: 5%;
   transform: translateX(-50%);
   z-index: 2; /* Ensures the dot sits visually above the horizontal line */
 }
 
 .timeline-year {
   font-size: 60px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
   font-weight: 800;
   color: white; 
   margin-bottom: 30px;
